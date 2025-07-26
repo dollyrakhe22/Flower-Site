@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "width" 100;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* shared style */
+
+* {
+  box-sizing: border-box;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 140px;
+}
+.display-flex{
+  display: flex;
+}
+.gray{
+  color: #8987A1;
+}
+.black{
+  color: black;
+  font-weight: 700;
+}
+.orange{
+  color: #E95A08;
+}
+.bg-light{
+  background-color:#F5F8FF;
+}
+.banner-description,
+.plant-description,
+.plant-lover-description {
+    font-size: 1.3rem;
+}
+/* navbar related styles */
+.navbar{
+   
+ justify-content: space-between;
+ align-items: center;
+ max-width: 1440px;
+ margin: 0 30px 0 50px;
+margin-bottom: 130px;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1rem;
+}
+#shopping-cart{
+ display: flex;
+ align-items: center;
+ gap: 5px;
+ color: black;
+}
+ /* banner styles */ 
+ .banner-content{
+    max-width: 550px;
+ }
+.banner{
+    align-items: end;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 80px 50px 80px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+     margin: 0px;
+}
+/* plant section styles */
+.plant{
+    margin: 0 30px;
+}
+
+.plant-title, .Deals-title, .plant-lover-title{
+    font-size:3.1rem;
+    font-weight: 700;
+    margin: 0;
+}
+.plant-description{
+   margin-bottom: 30px;
+}
+.plant-content, .Deals-content{
+    text-align: center;
+    margin-bottom: 55px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+.card{ 
+    text-align: center;
+}
+.card img{
+width: 100%;
+}
+.cart-price{
+    font-size: 1.3rem;
+    font-weight:800;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.card-name{
+    font-weight: 550;
+     font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+} 
+.btn-primary{
+    color: white;
+    background-color: #E95A08;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 20px 50px;
+    width: 100%;
+}
+/* plant lover related styles */
+.plant-lovers {
+    margin: 150px 30px 50px 30px;
+}
+.plant-lover-title{
+    margin-top: 10px;
+}
+
+.plant-lover-description li{
+    margin-top: 50px;
+    line-height: 30px; 
+}
+.plant-lover-description{
+    list-style-type: disc;
+}
+.images{
+    position: relative; 
+    height: 100%;
+    width: 100%;
+    
+}
+.badge{
+    width: 280px;
+    position: absolute;
+    margin-left: 355px;
+    margin-top: -120px;
+    filter: drop-shadow(-1px 5px 3px rgb(107, 106, 106 ));
+   
+}
+/* latest Deals section styles */
+.image-container{
+   display: flex;
+   gap: 25px;
+   /* width: 1440px; */
+   margin: 0 150px;
+}
+.left{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+
+}
+.left img{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.right-card{
+    position: relative;
+}
+.right-card img{
+    border-radius: 8px;
+    max-width: 753px;
+}
+.left-card{
+    position: relative;
+    
+}
+.text{
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    inset: 0;
+   align-content: center;
+}
+.text a{
+     text-decoration: underline;
+}
+ .text-z{
+    position: absolute;
+    text-align: center;
+    color: white;
+ align-items: center;
+    justify-content: center;
+    inset: 0;
+   align-content: center;
+ }
+ .zebo-a{
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.zabo {
+color: white;
+font-size: 2.3rem;
+margin: 0;
+font-weight: 700;
+}
+.text-title{
+    font-weight: 700;
+    font-size: 1.3rem;
+     
+}
+
+/* join section styles */
+    .join-section {
+      background-image: url('assets/news-letter-bg.png');
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 533px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      margin-top: 100px;
+    }
+
+
+.join-title{
+    color: white;
+    font-size: 3rem;
+    font-weight: 700; 
+    margin-bottom: 20px;
+}
+.join-content{
+    max-width: 1000px;
+    width: 100%;
+
+}
+.join-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.join-form input[type="email"] {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: none;
+    width: 60%;
+    min-width: 200px;
+    outline: none;
+    background-color: white;
+}
+  .join-form button {
+      padding: 12px 20px;
+      background-color: #E95A08;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      
+    }
+    /* footer sections */
+    
+    .footer{
+        background-color: rgb(255, 255, 255);
+          padding: 60px 40px;
+          
+    }
+.footer-container{
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+    gap: 50px;
+}
+.f-logo{
+    width:135px ;
+    margin-bottom: 20px;
+}
+.f-description{
+font-size: 1.3rem;
+line-height: 1.2;
+}
+.footer-left{
+    max-width:300px;
+}
+.footer-link{
+    gap: 80px;
+    }
+.footer-link ul{
+list-style: none;
+
+}  
+.footer-link ul li{
+    margin-bottom: 20px;
+    font-size: 1rem;
+
+}
+.footer-icons{
+    display: flex;
+    gap: 20px;
+    align-items: start;
+}
+@media screen and (max-width:576px) {
+
+    .nav-link{
+        display: none;
+    }
+    .navbar{
+        margin: 10px 5px 10px 10px;
+    }
+    .navbar img{
+    width: 100px;
+    height: 55px;
+    }
+    .banner-title{
+        margin-top: 10px;
+        font-size: 24px;
+
+    }
+     .banner-description{
+        margin-top: 10px;
+        font-size: 14px;
+     }
+     .plant{
+        margin: 10px 5px 10px 5px;
+     }
+     .plant-title{
+        font-size: 24px;
+     }
+     .plant-description{
+        font-size: 14px ;
+     }
+     .card-name, .cart-price{
+        font-size: 16px;
+     }
+     .card-container{
+        margin: 20px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+.badge{
+    display: none;
+}
+.images{
+    height: 100%;
+    width: 100%;
+    margin: -10px;
+}
+.plant-lovers{
+    flex-direction: column;
+    /* margin-left: 20px; */
+    margin-top: 50px 20px 50px 20px;
+}
+.plant-lover-content{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.plant-lover-title{
+    font-size: 24px;
+}
+.plant-lover-description {
+    font-size: 14px;
+    list-style-type: disc;
+}
+.plant-lover-description li{
+ margin:10px;
+}
+.btn-primary{
+    padding: 15px 20px;
+}
+.latest-section{
+    margin: 10px;
+}
+.image-container{
+    flex-direction:column;
+    width: 100%;
+    margin:0px;
+   
+}
+.right-card img{
+    width: 100%;
+}
+.Deals-content{
+    margin-bottom: 30px;
+}
+.Deals-title{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.Deals-description{
+    font-size: 14px;
+    margin-bottom:20px;
+}
+.text{
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+   align-content: center;
+   
+}
+.text-z{
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+   align-content: center;
+}
+.text-title,.zabo{
+    font-size: 20px;
+    font-weight: 700;
+}
+.zebo-a{
+    font-size: 16px;
+     font-weight: 500;
+}
+.join-title{
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    
+}
+
+
+.footer-container{
+    flex-direction: column;
+}
+.footer-link{
+    flex-direction: column;
+    
+}
+.f-logo{
+   margin-bottom: 15px;
+}
+ .footer-link ul{
+    margin-bottom: -50px; 
+    margin-top: -30px;
+}
+.footer-icons{
+    margin-top: 30px;
+}
+.f-description{
+    font-size: 1rem;
+}
+ #shopping-cart img {
+    width: 24px;
+    height: 24px;
+  }
+.banner{
+    flex-direction:column-reverse;
+    margin:20px 10px 80px;
+   
+}
+ .banner-content{
+    width:100%;
+    margin-top: 10px;
+ }
+ 
+}
